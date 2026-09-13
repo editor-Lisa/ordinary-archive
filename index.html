@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ordinary archive</title>
+<meta name="description" content="things I don't want to forget.">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Sans+KR:wght@300;400;500&display=swap');
+
+:root{
+  --paper:#f4f0e8; --ink:#24231f; --muted:#7c776d;
+  --line:#d5cfc2; --accent:#71806f;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Noto Sans KR",sans-serif;font-weight:300;line-height:1.8}
+a{color:inherit;text-decoration:none}
+.container{width:min(1080px,calc(100% - 44px));margin:auto}
+header{padding:34px 0 20px;border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(244,240,232,.94);backdrop-filter:blur(8px);z-index:10}
+.nav{display:flex;justify-content:space-between;align-items:center;gap:20px}
+.logo{font:500 14px "DM Mono",monospace;letter-spacing:.08em}
+nav{display:flex;gap:22px;font:400 11px "DM Mono",monospace;letter-spacing:.05em}
+nav a:hover{color:var(--accent)}
+.hero{min-height:72vh;display:grid;align-content:center;padding:90px 0}
+.kicker{font:11px "DM Mono",monospace;color:var(--accent);letter-spacing:.12em;text-transform:uppercase}
+h1{font:400 clamp(42px,7vw,82px)/1.08 "Libre Baskerville",serif;letter-spacing:-.04em;margin:18px 0 25px}
+.hero p{max-width:590px;font-size:16px;color:#5e5a52}
+.date{margin-top:45px;font:11px "DM Mono",monospace;color:var(--muted)}
+section{padding:90px 0;border-top:1px solid var(--line)}
+.section-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:42px}
+.section-head h2{font:400 27px "Libre Baskerville",serif;margin:0}
+.section-head span{font:11px "DM Mono",monospace;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.card{background:var(--paper);padding:28px;min-height:205px;transition:.2s}
+.card:hover{background:#eee9df;transform:translateY(-2px)}
+.card .num{font:11px "DM Mono",monospace;color:var(--muted)}
+.card h3{font:400 21px "Libre Baskerville",serif;margin:35px 0 10px}
+.card p{font-size:13px;color:#69645b;margin:0}
+.note{display:grid;grid-template-columns:1fr 2fr;gap:70px;align-items:start}
+.note blockquote{font:italic 23px/1.7 "Libre Baskerville",serif;margin:0}
+.note .small{font-size:13px;color:var(--muted)}
+.books{display:grid;grid-template-columns:repeat(2,1fr);gap:0 50px}
+.book{padding:22px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:20px}
+.book-title{font:400 18px "Libre Baskerville",serif}
+.book-author{font-size:12px;color:var(--muted)}
+.rating{font:11px "DM Mono",monospace;color:var(--accent);white-space:nowrap}
+.timeline{border-left:1px solid var(--line);padding-left:28px}
+.entry{position:relative;padding:0 0 45px}
+.entry:before{content:"";position:absolute;left:-33px;top:10px;width:7px;height:7px;border:1px solid var(--accent);background:var(--paper);border-radius:50%}
+.entry .when{font:11px "DM Mono",monospace;color:var(--accent)}
+.entry h3{font:400 20px "Libre Baskerville",serif;margin:8px 0}
+.entry p{font-size:14px;color:#666158;max-width:680px}
+footer{padding:65px 0 80px;text-align:center;color:var(--muted);font:11px "DM Mono",monospace}
+@media(max-width:700px){
+  .container{width:min(100% - 28px,1080px)}
+  header{padding:20px 0}
+  nav{gap:11px;flex-wrap:wrap;justify-content:flex-end}
+  .hero{min-height:68vh;padding:65px 0}
+  section{padding:65px 0}
+  .grid,.books{grid-template-columns:1fr}
+  .note{grid-template-columns:1fr;gap:28px}
+  .card{min-height:175px}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="logo" href="#top">ORDINARY ARCHIVE</a>
+    <nav>
+      <a href="#books">BOOKS</a>
+      <a href="#days">DAYS</a>
+      <a href="#places">PLACES</a>
+      <a href="#words">WORDS</a>
+      <a href="#thoughts">THOUGHTS</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="container">
+    <section class="hero" style="border-top:0">
+      <div>
+        <div class="kicker">a personal archive · 2026—</div>
+        <h1>things I don't<br> want to forget.</h1>
+        <p>
+          특별하지 않은 날들, 오래 생각하게 만든 책,
+          우연히 만난 문장, 지나온 장소와 아직 답을 찾지 못한 질문들.
+          <br><br>
+          이곳은 나를 설명하기 위한 곳이 아니라<br>
+          내가 지나온 흔적을 남겨두기 위한 곳.
+        </p>
+        <div class="date">SEOUL · 2026.09.13</div>
+      </div>
+    </section>
+
+    <section id="now">
+      <div class="section-head"><h2>Now</h2><span>01 / present</span></div>
+      <div class="note">
+        <div class="small">WHAT IS ALIVE RIGHT NOW</div>
+        <blockquote>
+          “Maybe a life doesn't have to become something else
+          to be worth keeping.”
+        </blockquote>
+      </div>
+    </section>
+
+    <section id="books">
+      <div class="section-head"><h2>Books</h2><span>02 / reading</span></div>
+      <div class="books">
+        <div class="book"><div><div class="book-title">Stoner</div><div class="book-author">John Williams</div></div><div class="rating">still thinking</div></div>
+        <div class="book"><div><div class="book-title">Elizabeth Finch</div><div class="book-author">Julian Barnes</div></div><div class="rating">★★★★★</div></div>
+        <div class="book"><div><div class="book-title">The Storied Life of A.J. Fikry</div><div class="book-author">Gabrielle Zevin</div></div><div class="rating">★★★★★</div></div>
+        <div class="book"><div><div class="book-title">The Speed of Dark</div><div class="book-author">Elizabeth Moon</div></div><div class="rating">remember</div></div>
+        <div class="book"><div><div class="book-title">Last Summer in the City</div><div class="book-author">Gianfranco Calligarich</div></div><div class="rating">★★★★★</div></div>
+        <div class="book"><div><div class="book-title">The Midnight Library</div><div class="book-author">Matt Haig</div></div><div class="rating">left a trace</div></div>
+      </div>
+    </section>
+
+    <section id="days">
+      <div class="section-head"><h2>Days</h2><span>03 / ordinary days</span></div>
+      <div class="timeline">
+        <article class="entry">
+          <div class="when">2026.09.13 · SUNDAY</div>
+          <h3>오늘의 기록은 여기서 시작한다.</h3>
+          <p>기억하고 싶은 날만 기록하면 결국 기억하고 싶은 날만 남는다. 그래서 별것 없는 날도 가끔 적어두기로 했다.</p>
+        </article>
+        <article class="entry">
+          <div class="when">SOMEWHERE IN 2026</div>
+          <h3>내일이 없는 사람이 부러웠던 날</h3>
+          <p>반복되는 하루가 미래로 이어진다는 생각이 버거웠다. 이상하게도 그날은 '내일'이라는 것이 없는 삶을 잠시 부러워했다.</p>
+        </article>
+        <article class="entry">
+          <div class="when">A DAY WORTH KEEPING</div>
+          <h3>아무 일도 일어나지 않은 날</h3>
+          <p>책을 읽고, 걸었고, 저녁을 먹었다. 기록할 사건은 없었지만 하루가 사라지는 것이 조금 아쉬웠다.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="places">
+      <div class="section-head"><h2>Places</h2><span>04 / elsewhere</span></div>
+      <div class="grid">
+        <a class="card" href="#"><div class="num">01</div><h3>Taipei</h3><p>찻집 · 서점 · LP · 오래된 거리<br>그리고 여행자가 아닌 사람처럼 머물러 보기.</p></a>
+        <a class="card" href="#"><div class="num">02</div><h3>Bookstores</h3><p>책을 사기 위해서가 아니라<br>그 공간에 잠시 존재하기 위해 가는 곳들.</p></a>
+        <a class="card" href="#"><div class="num">03</div><h3>Small Places</h3><p>기억에는 지도보다 장소의 공기가<br>더 오래 남는다는 생각.</p></a>
+      </div>
+    </section>
+
+    <section id="words">
+      <div class="section-head"><h2>Words</h2><span>05 / sentences</span></div>
+      <div class="note">
+        <div class="small">WORDS I KEEP RETURNING TO</div>
+        <blockquote>“Life is not all it's cracked up to be.”</blockquote>
+      </div>
+      <p style="margin-top:35px;color:#6d685f;font-size:14px">
+        책에서 만난 문장, 영어를 공부하다 마음에 걸린 표현,
+        누군가의 말, 그리고 내가 어느 날 스스로에게 했던 말.
+      </p>
+    </section>
+
+    <section id="thoughts">
+      <div class="section-head"><h2>Thoughts</h2><span>06 / unfinished</span></div>
+      <div class="grid">
+        <a class="card" href="#"><div class="num">01 · QUESTION</div><h3>반복되는 삶에 대하여</h3><p>반복은 지루함인가, 아니면 삶의 기본적인 형태인가.</p></a>
+        <a class="card" href="#"><div class="num">02 · QUESTION</div><h3>일이 나를 바꾸는 방식</h3><p>생계를 위해 하는 일이 사람의 마음과 표정을 어디까지 바꿀 수 있을까.</p></a>
+        <a class="card" href="#"><div class="num">03 · QUESTION</div><h3>혼자 산다는 것</h3><p>혼자 있는 것과 외로운 것은 정말 같은 것일까.</p></a>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div>ORDINARY ARCHIVE</div>
+  <div style="margin-top:10px">made to remember, not to perform.</div>
+</footer>
+</body>
+</html>
